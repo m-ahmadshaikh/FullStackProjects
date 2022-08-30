@@ -1,0 +1,17 @@
+
+.container{
+
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+}
+img{
+    width: 200px;
+    height: 200px;
+}

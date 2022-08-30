@@ -1,0 +1,25 @@
+body{
+    background-color: #1C3879;
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    background-color: #1C3879;
+    color: #EAE3D2;
+    width: 10em;
+    height: 4em;
+    border: 2px solid #EAE3D2;
+
+    position: absolute;
+    margin: auto;
+
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+button:hover{
+    border-color: #FEB139;
+    color:  #FEB139;
+    transform: translateY();
+}

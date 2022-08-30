@@ -1,0 +1,20 @@
+div{
+    background-color: #3d405b;
+    width:100px;
+    height:100px;
+    margin:10px;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+#middle{
+    background-color: #81b29a;
+}
+
+div:hover{
+    margin-left: 100px;
+}
+
+div:nth-of-type(1){
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}

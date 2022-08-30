@@ -1,0 +1,30 @@
+div{
+    background-color: #3d405b;
+    width:100px;
+    height:100px;
+    display: inline-block;
+    margin:10px;
+    border: 2px solid black;
+}
+
+#middle{
+    background-color: #81b29a;
+}
+
+#static #middle{
+    position: static;
+    top: 100px;
+    bottom: 100px;
+}
+
+#relative #middle{
+    position: relative;
+}
+
+#absolute{
+    position: relative;
+}
+#absolute #middle:hover{
+    position: relative;
+    border
+}

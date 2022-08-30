@@ -1,0 +1,10 @@
+div{
+    background-color: indigo;
+    width:100px;
+    height:100px;
+    display: inline-block;
+}
+
+div#middle{
+    background-color: #81b29a;
+}

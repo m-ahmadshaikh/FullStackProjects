@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Product</title>
+  </head>
+  <body>
+    <section
+      style="
+        max-width: 100%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+      "
+    >
+      <form action="/products" method="post" style="">
+        <h1>Create New Product</h1>
+        <ul>
+          <li>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" />
+          </li>
+          <li>
+            <label for="price">Price: </label>
+            <input type="text" id="price" name="price" />
+          </li>
+          <li>
+            <label for="category">Category: </label>
+            <input type="text" id="category" name="category" />
+          </li>
+          <li>
+            <button>Create Product</button>
+          </li>
+        </ul>
+      </form>
+    </section>
+  </body>
+</html>

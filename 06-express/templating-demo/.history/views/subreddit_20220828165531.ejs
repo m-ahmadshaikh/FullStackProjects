@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs'); %>
+  <body>
+    
+    <div class="container">
+      <h1>You are viewing <%= name %></h1>
+      <p>You have <%= subscribers %> subscribers</p>
+      <p><%= description %></p>
+      <ul>
+        <% for(const {title,author} of posts){ %>
+
+        <li>Title: <%=title %></li>
+
+        <li>Author: <%=author %></li>
+        <br />
+        <% } %>
+      </ul>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

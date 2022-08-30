@@ -1,0 +1,25 @@
+div{
+    background-color: indigo;
+    width:100px;
+    height:100px;
+    display: inline-block;
+}
+
+#middle{
+    background-color: #81b29a;
+}
+
+#static #middle{
+    position: static;
+    top: 100px;
+    bottom: 100px;
+}
+
+#relative #middle{
+    position: relative;
+}
+
+#absolute{
+    position: absolute;
+    top:200px;
+}

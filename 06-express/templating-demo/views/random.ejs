@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+  <%- include('partials/head.ejs'); %>
+
+    <body>
+
+  <%- include('partials/navbar.ejs'); %>
+        <h1>
+            You Random Number is: <%=rand %>
+        </h1>
+        <% if(rand%2===0){ %>
+            <h2>Even</h2>
+            <% }else{ %>
+                <h2>Odd</h2>
+                <% } %>
+                    <h2>
+                        <%= rand % 2===0 ? 'Even' :'Odd' %>
+                    </h2>
+    </body>
+
+</html>

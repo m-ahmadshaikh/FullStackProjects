@@ -1,0 +1,1 @@
+import {franc, francAll} from 'franc';

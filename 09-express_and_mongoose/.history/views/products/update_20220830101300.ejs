@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Product</title>
+    <style>
+      form {
+        max-width: 50%;
+        margin: 0 auto;
+      }
+      .flex-outer li {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 2rem 0;
+      }
+      .flex-outer > li > label {
+        flex: 1 0 120px;
+        max-width: 220px;
+      }
+      .flex-outer > li > label + * {
+        flex: 1 0 120px;
+      }
+      .flex-outer li a {
+        text-decoration: none;
+      }
+      .flex-outer li button,
+      .flex-outer li a {
+        margin: 0 auto;
+        padding: 8px 16px;
+        border: none;
+        background: #333;
+        color: #f2f2f2;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        border-radius: 2px;
+      }
+      input:invalid {
+        border: 2px dashed red;
+      }
+
+      input:invalid:required {
+        background-image: linear-gradient(to right, pink, lightgreen);
+      }
+
+      input:valid {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <form action="/products/<%= product._id%>" action="/edit-post/<post.id>?_method=PUT" method="post">
+        <ul class="flex-outer">
+          <li><h1>Create New Product</h1></li>
+          <li>
+            <label for="name">Name: </label>
+            <input
+              required="required"
+              type="text"
+              id="name"
+              name="name"
+              value="<%=product.name  %>"
+            />
+          </li>
+          <li>
+            <label for="price">Price: value="<%=product.price %>"</label>
+            <input
+              value="0"
+              min="0"
+              required="required"
+              type="number"
+              id="price"
+              name="price"
+            />
+          </li>
+          <li>
+            <label for="category">Category: </label>
+            <select name="category" required>
+              <option value="<%=product.category%>" selected disabled hidden>
+                <%=product.category %>
+              </option>
+              <option value="fruit">Fruit</option>
+              <option value="vegetable" selected>Vegetable</option>
+              <option value="dairy">Dairy</option>
+            </select>
+          </li>
+          <li>
+            <button>Create Product</button>
+          </li>
+          <li>
+            <a href="/products/">All Products</a>
+          </li>
+        </ul>
+      </form>
+    </section>
+  </body>
+</html>
